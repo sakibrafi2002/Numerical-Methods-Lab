@@ -1,3 +1,6 @@
+/// Write a program to read a line of text which will contain a list of integers. Store these integers in an integer array and display them.
+/// C221060
+
 #include<bits/stdc++.h>
 using namespace std;
 
