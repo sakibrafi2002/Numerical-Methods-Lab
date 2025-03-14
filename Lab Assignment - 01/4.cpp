@@ -4,28 +4,29 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-double error = .0005;
+double error = .0001;
 
-double calc(double x)
+bool calc(double x)
 {
-    return ( (x * x * x) - (9.0 * x) + 1 );
+    double xx = ( (x * x * x) - (9.0 * x) + 1.0 );
+    if(xx < 0.0) return true;
+    else return false;
 }
 
 int main()
 {
-    double boro = 3.0, choto = 2.0;
+    double boro = 3.0, choto = 1.0;
 
     while(fabs(boro - choto) >= error)
     {
         double mid = (boro + choto) / 2.0;
-        double cur = calc(mid);
-        if(cur < 0.0){
+        if(calc(mid)){
             choto = mid;
         }
         else boro = mid;
     }
 
-    cout << fixed << setprecision(3) << boro << endl;
+    cout << fixed << setprecision(3) << choto << endl;
 
     return 0;
 
