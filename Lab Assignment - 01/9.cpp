@@ -12,23 +12,23 @@ int main()
     cout << "x = ";
     cin >> x;
     vector<int>a(n+5),b(n+5);
-    for(int i = n-1; i>=0; i--)
+    for(int i = n; i>=0; i--)
     {
         cout << "a[" << i << "] = ";
         cin >> a[i];
     }
-    b[n-1] = 0;
-    for(int i = n-2; i >= 0; i--){
+    b[n] = 0;
+    for(int i = n-1; i >= 0; i--){
         b[i] = a[i+1] + (x * b[i+1]);
     }
 
     cout << "\nThe Quotient Polynomial q(x) is, \n";
 
-    for(int i = n-2; i >= 0; i--){
+    for(int i = n-1; i >= 0; i--){
         if(b[i] == 0){
             continue;
         }
-        if(i == n-2){
+        if(i == n-1){
             cout << b[i] << "x^" << i << " ";
             continue;
         }
@@ -46,3 +46,22 @@ int main()
 
     return 0;
 }
+
+
+/*
+
+input:
+
+3
+2
+1
+-5
+10
+8
+
+output:
+
+The Quotient Polynomial q(x) is,
+1x^2 - 3x^1 + 4 = 0
+
+*/
