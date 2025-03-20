@@ -1,4 +1,4 @@
-/// Write a program to evaluate the polynomial function using Horner's rule
+/// Write a program to evaluate a polynomial f(x) = x3 - 2x2 + 5x + 10  by using Horner's rule x = 5.
 /// C221060
 
 #include<bits/stdc++.h>
