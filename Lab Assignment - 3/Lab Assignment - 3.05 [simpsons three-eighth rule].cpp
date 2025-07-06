@@ -66,6 +66,6 @@ Input:
 
 Output:
 
-0.346574
+Approximate area is: 0.346574
 
 */
