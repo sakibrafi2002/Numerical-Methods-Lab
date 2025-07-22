@@ -1,6 +1,16 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
+/// C221060
+
+/*
+
+2. Write a program to find the least square parabola y = a + bx + cx2 for the following data
+      x         2       4      6        8
+      y         1.4     2.0     2.4     2.8
+
+
+*/
+
+
+#include<bits/stdc++.h>
 using namespace std;
 
 // Function to perform Gaussian elimination
